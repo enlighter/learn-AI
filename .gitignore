@@ -5,6 +5,12 @@ __pycache__/
 # C extensions
 *.so
 
+# zip files
+*.zip
+
+# word processor processing files
+.~*#
+
 # Distribution / packaging
 .Python
 env/
