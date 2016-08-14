@@ -68,6 +68,7 @@ class EightPuzzle:
     def _generate_moves(self):
         free = self._get_legal_moves()
         zero = self.find(0)
+        #print 'zero at:',zero
 
         def swap_and_clone(a, b):
             p = self._clone()
@@ -105,6 +106,8 @@ class EightPuzzle:
                     return [x]
 
             succ = x._generate_moves()
+            #for move in succ:
+            #    print move
             idx_open = idx_closed = -1
             for move in succ:
                 # have we already seen this node?
